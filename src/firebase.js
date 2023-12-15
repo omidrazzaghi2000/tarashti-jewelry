@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  apiKey: "AIzaSyAgPYJHs_jlUKAuaGrxTYWlgVglBv9ClOg",
+  authDomain: "tarashtijewelry.firebaseapp.com",
+  projectId: "tarashtijewelry",
+  storageBucket: "tarashtijewelry.appspot.com",
+  messagingSenderId: "637459857982",
+  appId: "1:637459857982:web:9a95b18ef326d9ddba876f",
+  measurementId: "G-XDMPBBL54N"
 };
 
 const app = initializeApp(firebaseConfig);
