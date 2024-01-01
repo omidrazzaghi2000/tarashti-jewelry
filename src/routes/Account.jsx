@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import WatchList from '../components/WatchList'
 import {UserAuth} from "../context/AuthContext"

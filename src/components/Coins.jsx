@@ -1,5 +1,4 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import CoinItem from './CoinItem'
 
 
@@ -32,6 +31,8 @@ function Coins({coins}) {
                         return value
                     }else if(value.name.toLowerCase().includes(searchText.toLowerCase())){
                         return value
+                    }else{
+                        return ""
                     }
                 }).map((coin)=> (
                     <CoinItem key={coin.id} coin={coin}/>

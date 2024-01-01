@@ -14,6 +14,7 @@ function CoinPage() {
 
     const url = `https://api.coingecko.com/api/v3/coins/${params.coinId}?localization=false&sparkline=true`
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const coinData = async () => {
         try{
             await axios.get(url)
@@ -27,9 +28,9 @@ function CoinPage() {
     }
 
     useEffect(()=>{
-        coinData()
+        coinData().then(r => console.log("Data"))
         setLoading(false)
-    },[url])
+    },[coinData, url])
 
   return (
     <div className='rounded-div mt-6 py-4'>

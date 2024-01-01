@@ -11,18 +11,24 @@ import Footer from "./components/Footer";
 import SignUp from "./routes/SingUp";
 import Account from "./routes/Account";
 import { AuthContextProvider } from "./context/AuthContext";
+import * as Realm from "realm-web";
 
 
 function App() {
   const [data, setData] = useState([])
   const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=true"
-
+  const APP_ID = "application-0-chibt"
+  // Add your App ID
+  const app = new Realm.App({ id: APP_ID });
+  console.log(app)
   useEffect(()=>{
     axios.get(url)
       .then((response) => {
         setData(response.data)
       })
   },[url])
+
+
 
   return (
     <AuthContextProvider>

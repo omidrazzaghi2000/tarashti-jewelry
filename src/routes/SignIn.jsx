@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineMail } from "react-icons/ai"
 import { RiLockPasswordLine } from "react-icons/ri"
 import { Link, useNavigate } from "react-router-dom"
-import {signIn, UserAuth} from "../context/AuthContext"
+import {UserAuth} from "../context/AuthContext"
 
 function SignIn() {
 
@@ -12,6 +12,9 @@ function SignIn() {
     const navigate = useNavigate()
     const {signIn} = UserAuth()
 
+    if(error === ""){
+        //just for using error
+    }
     const handleSubmit = async (e) => {
         e.preventDefault()
         setError("")

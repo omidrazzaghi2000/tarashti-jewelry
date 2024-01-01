@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { AiOutlineHeart } from "react-icons/ai"
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 import { Link } from "react-router-dom"
 import { db } from "../firebase"
 import { UserAuth } from "../context/AuthContext"
-import { arrayUnion, doc, updateDoc, onSnapshot } from "firebase/firestore"
+import { arrayUnion, doc, updateDoc } from "firebase/firestore"
 
 
 function CoinItem({coin}) {
@@ -15,7 +15,7 @@ function CoinItem({coin}) {
   const handleSavedCoin = () => {
     setSavedCoin(prevCoin => !prevCoin)
   }
-
+  // console.log(":OMID:")
   const coinPath = doc(db, "user", `${user?.email}`)
   const saveCoin = async () => {
     if(user?.email) {

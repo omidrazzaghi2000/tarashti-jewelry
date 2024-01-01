@@ -1,5 +1,4 @@
 import React from 'react'
-import Switcher from './Switcher'
 import {AiOutlineTwitter, AiOutlineInstagram, AiOutlineGithub, AiFillFacebook} from "react-icons/ai"
 
 function Footer() {
