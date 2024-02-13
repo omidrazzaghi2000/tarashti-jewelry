@@ -5,8 +5,8 @@ import Trending from '../components/Trending'
 function Home(props) {
   return (
     <div>
-        <Coins coins={props.coins}/>
-        <Trending/>
+        {/*<Coins coins={props.coins}/>*/}
+        {/*<Trending/>*/}
     </div>
   )
 }
