@@ -14,6 +14,10 @@ import { AuthContextProvider } from "./context/AuthContext";
 import * as Realm from "realm-web";
 
 
+
+
+
+
 function App() {
   const [data, setData] = useState([])
   const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=true"
@@ -29,7 +33,6 @@ function App() {
   },[url])
 
 
-
   return (
     <AuthContextProvider>
       <div className="App">
@@ -43,7 +46,7 @@ function App() {
             <Route path=":coinId"/>
           </Route>
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </AuthContextProvider>
   );
