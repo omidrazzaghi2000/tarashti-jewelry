@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useCallback } from 'react'
+import { useState } from 'react'
 import { FaMinusCircle, FaPlusCircle } from "react-icons/fa"
 import { Link } from "react-router-dom"
-
-
+import { saveNewOrder } from './Prices'
+import {UserAuth} from "../context/AuthContext"
+import {  toast } from 'react-toastify';
 function PricesItem({ item }) {
+    const {user, logout} = UserAuth()
+    const [buyNumber, setBuyNumber] = useState('')
+    const [sellNumber, setSellNumber] = useState('')
+    const handleBuyNumber = event => {
+        setBuyNumber(event.target.value);
+    }
+    function sendBuyOrder() {
+        if(user){
+            let msg = "آیا مطمئن هستید که می خواهید"
+            msg += ` ${buyNumber} `;
+            msg += `تعداد از `;
+            msg += `${item.get('name')} `
+            msg += `خریداری نمایید.`
+            if(window.confirm(msg)) {
+                // Save it!
+                saveNewOrder(user)
+            } else {
+                console.log('Thing was not saved to the database.');
+            }
+        }else{
+            toast('.لطفا ابتدا وارد شوید')
+        }
+        
+    }
+
     return (
         <div>
             <div className='rounded-div p-3  ease-out duration-300'>
@@ -20,25 +47,34 @@ function PricesItem({ item }) {
                     <div className='block'>
                         <div className='flex my-4'>
                             <div>
-                            <p>{item.get('buy_price')}</p>
-                            <h3>تومان</h3>
+                                <p>{item.get('buy_price')}</p>
+                                <h3>تومان</h3>
                             </div>
-                            <div className='hover:scale-105 cursor-pointer '>
-                                <h3>خریـد</h3>
+                            <div className='cursor-pointer'>
+                                <h3>خرید</h3>
                                 <FaPlusCircle color='orange' size={15} className="relative top-[6px] right-1"></FaPlusCircle>
+
+                            </div>
+                            <div>
+                                <input type='number' min="0" style={{ width: "100px", color: "#222" }} value={buyNumber} onChange={handleBuyNumber} />
+                                <button className='text-xs px-3 py-1 dark:bg-slate-700 bg-slate-300 rounded-lg'
+                                    onClick={sendBuyOrder}>ثبت</button>
                             </div>
                         </div>
                         <div className='flex'>
                             <div className=''>
-                            <p>{item.get('sell_price')}</p>
-                            <h3>تومان</h3>
+                                <p>{item.get('sell_price')}</p>
+                                <h3>تومان</h3>
                             </div>
-                            <div className='hover:scale-105 cursor-pointer'>
-                            <h3>فـروش</h3>
+                            <div className='cursor-pointer'>
+                                <h3>فـروش</h3>
                                 <FaPlusCircle color='orange' size={15} className="relative top-[6px] right-1"></FaPlusCircle>
-                                <input  type='number'/>
+
                             </div>
-                            
+                            <div>
+                                <input type='number' min="0" style={{ width: "100px", color: "#222" }} />
+                                <button className='text-xs px-3 py-1 dark:bg-slate-700 bg-slate-300 rounded-lg'>ثبت</button>
+                            </div>
                         </div>
 
                     </div>

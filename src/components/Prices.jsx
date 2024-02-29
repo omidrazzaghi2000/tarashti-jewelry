@@ -4,9 +4,36 @@ import PricesItem from './PricesItem'
 // for back4app
 import Parse from 'parse/dist/parse.min.js';
 
+import { toast } from 'react-toastify';
+
+
 /** Initializing the SDK. **/
 Parse.initialize('HOMspH4VDRuAN3wyyxcyNISZzfSGkrM194UAdbEB','HVh21Q8XALwj9MstDAMUWlNFHs9M4EZrJd1NPOwd');
 Parse.serverURL = 'https://parseapi.back4app.com/';
+
+export async function saveNewOrder(user) {
+    
+    alert("omid")
+    
+    console.log(user)
+
+
+    //Create your Parse Object
+    // const soccerPlayers = new Parse.Object("SoccerPlayers");
+
+    // //Define its attributes
+    // soccerPlayers.set("playerName", "A. Wed");
+    // soccerPlayers.set("yearOfBirth", 1997);
+    // soccerPlayers.set("emailContact", "a.wed@email.io");
+    // soccerPlayers.set("attributes", ["fast","good conditioning"])
+    // try{
+    //     //Save the Object
+    //     let result = await soccerPlayers.save()
+    //     alert('New object created with objectId: ' + result.id);
+    // }catch(error){
+    //     alert('Failed to create new object, with error code: ' + error.message);
+    // }
+} 
 
 function Prices() {
 

@@ -12,7 +12,8 @@ import SignUp from "./routes/SingUp";
 import Account from "./routes/Account";
 import { AuthContextProvider } from "./context/AuthContext";
 import * as Realm from "realm-web";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -48,6 +49,7 @@ function App() {
         </Routes>
         {/* <Footer/> */}
       </div>
+      <ToastContainer/>
     </AuthContextProvider>
   );
 }
