@@ -12,7 +12,11 @@ function PricesItem({ item }) {
     const handleBuyNumber = event => {
         setBuyNumber(event.target.value);
     }
-    function sendBuyOrder() {
+    const handleSellNumber = event =>{
+        setSellNumber(event.target.value)
+    }
+
+    function sendBuyOrder(item) {
         if(user){
             let msg = "آیا مطمئن هستید که می خواهید"
             msg += ` ${buyNumber} `;
@@ -21,7 +25,26 @@ function PricesItem({ item }) {
             msg += `خریداری نمایید.`
             if(window.confirm(msg)) {
                 // Save it!
-                saveNewOrder(user)
+                saveNewOrder(user,item,buyNumber,true)
+            } else {
+                console.log('Thing was not saved to the database.');
+            }
+        }else{
+            toast('.لطفا ابتدا وارد شوید')
+        }
+        
+    }
+
+    function sendSellOrder(item) {
+        if(user){
+            let msg = "آیا مطمئن هستید که می خواهید"
+            msg += ` ${sellNumber} `;
+            msg += `تعداد از `;
+            msg += `${item.get('name')} `
+            msg += `به فروش برسانید.`
+            if(window.confirm(msg)) {
+                // Save it!
+                saveNewOrder(user,item,sellNumber,false)
             } else {
                 console.log('Thing was not saved to the database.');
             }
@@ -58,7 +81,7 @@ function PricesItem({ item }) {
                             <div>
                                 <input type='number' min="0" style={{ width: "100px", color: "#222" }} value={buyNumber} onChange={handleBuyNumber} />
                                 <button className='text-xs px-3 py-1 dark:bg-slate-700 bg-slate-300 rounded-lg'
-                                    onClick={sendBuyOrder}>ثبت</button>
+                                    onClick={(_)=>sendBuyOrder(item)}>ثبت</button>
                             </div>
                         </div>
                         <div className='flex'>
@@ -72,8 +95,9 @@ function PricesItem({ item }) {
 
                             </div>
                             <div>
-                                <input type='number' min="0" style={{ width: "100px", color: "#222" }} />
-                                <button className='text-xs px-3 py-1 dark:bg-slate-700 bg-slate-300 rounded-lg'>ثبت</button>
+                                <input type='number' min="0" style={{ width: "100px", color: "#222" }} value={sellNumber} onChange={handleSellNumber} />
+                                <button className='text-xs px-3 py-1 dark:bg-slate-700 bg-slate-300 rounded-lg'
+                                    onClick={(_)=>sendSellOrder(item)} >ثبت</button>
                             </div>
                         </div>
 

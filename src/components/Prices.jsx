@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 Parse.initialize('HOMspH4VDRuAN3wyyxcyNISZzfSGkrM194UAdbEB','HVh21Q8XALwj9MstDAMUWlNFHs9M4EZrJd1NPOwd');
 Parse.serverURL = 'https://parseapi.back4app.com/';
 
-export async function saveNewOrder(user) {
+export async function saveNewOrder(user,item,itemNumber,isBuy) {
     
     alert("omid")
     
@@ -19,20 +19,33 @@ export async function saveNewOrder(user) {
 
 
     //Create your Parse Object
-    // const soccerPlayers = new Parse.Object("SoccerPlayers");
+    const newOrder = new Parse.Object("orders");
 
     // //Define its attributes
-    // soccerPlayers.set("playerName", "A. Wed");
-    // soccerPlayers.set("yearOfBirth", 1997);
-    // soccerPlayers.set("emailContact", "a.wed@email.io");
-    // soccerPlayers.set("attributes", ["fast","good conditioning"])
-    // try{
-    //     //Save the Object
-    //     let result = await soccerPlayers.save()
-    //     alert('New object created with objectId: ' + result.id);
-    // }catch(error){
-    //     alert('Failed to create new object, with error code: ' + error.message);
-    // }
+    // let usersRelation = newOrder.relation('_User')
+    // usersRelation.add(user);
+    newOrder.set('user_id',user.toPointer())
+
+    // let itemRelation = newOrder.relation('Item')
+    // itemRelation.add(item)
+    newOrder.set('item_id',item.toPointer())
+    
+    newOrder.set('is_buy',isBuy)
+
+    newOrder.set('item_number',parseInt(itemNumber))
+    
+
+
+    // newOrder.set("yearOfBirth", 1997);
+    // newOrder.set("emailContact", "a.wed@email.io");
+    // newOrder.set("attributes", ["fast","good conditioning"])
+    try{
+        //Save the Object
+        let result = await newOrder.save()
+        alert('New object created with objectId: ' + result.id);
+    }catch(error){
+        alert('Failed to create new object, with error code: ' + error.message);
+    }
 } 
 
 function Prices() {

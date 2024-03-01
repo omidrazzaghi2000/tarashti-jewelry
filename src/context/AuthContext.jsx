@@ -13,27 +13,30 @@ export const AuthContextProvider = ({ children }) => {
 
     const [user, setUser] = useState({})
 
-    const signUp = (email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-        return setDoc(doc(db, "user", email), {
-            favorites: [],
-        })
+    const signUp = (user) => {
+        setUser(user)
+        // createUserWithEmailAndPassword(auth, email, password)
+        // return setDoc(doc(db, "user", email), {
+        //     favorites: [],
+        // })
     }
-    const signIn = (email,password) => {
-        return signInWithEmailAndPassword(auth, email, password)
+    const signIn = (user) => {
+        setUser(user)
+        // return signInWithEmailAndPassword(auth, email, password)
     }
 
     const logout = () => {
-        return signOut(auth)
+        setUser(null)
+        // return signOut(auth)
     }
 
     useEffect(()=>{
-        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-            setUser(currentUser)
-        })
-        return () => {
-            unsubscribe()
-        }
+        // const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+        //     setUser(currentUser)
+        // })
+        // return () => {
+        //     unsubscribe()
+        // }
     },[])
 
     return (
