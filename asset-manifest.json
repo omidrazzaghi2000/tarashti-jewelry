@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tarashti-jewelry/static/css/main.0e432867.css",
+    "main.js": "/tarashti-jewelry/static/js/main.b299b0dd.js",
+    "index.html": "/tarashti-jewelry/index.html",
+    "main.0e432867.css.map": "/tarashti-jewelry/static/css/main.0e432867.css.map",
+    "main.b299b0dd.js.map": "/tarashti-jewelry/static/js/main.b299b0dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e432867.css",
+    "static/js/main.b299b0dd.js"
+  ]
+}
