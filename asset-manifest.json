@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tarashti-jewelry/static/css/main.0e432867.css",
-    "main.js": "/tarashti-jewelry/static/js/main.b299b0dd.js",
+    "main.js": "/tarashti-jewelry/static/js/main.44605f51.js",
     "index.html": "/tarashti-jewelry/index.html",
     "main.0e432867.css.map": "/tarashti-jewelry/static/css/main.0e432867.css.map",
-    "main.b299b0dd.js.map": "/tarashti-jewelry/static/js/main.b299b0dd.js.map"
+    "main.44605f51.js.map": "/tarashti-jewelry/static/js/main.44605f51.js.map"
   },
   "entrypoints": [
     "static/css/main.0e432867.css",
-    "static/js/main.b299b0dd.js"
+    "static/js/main.44605f51.js"
   ]
 }
