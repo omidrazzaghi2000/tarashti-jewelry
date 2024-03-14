@@ -1,333 +1,54 @@
-[debug] [2024-03-01T14:24:27.543Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:24:27.547Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2024-03-01T14:24:27.548Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:24:27.548Z] Platform:      win32
-[debug] [2024-03-01T14:24:27.548Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:24:27.549Z] Time:          Fri Mar 01 2024 17:54:27 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:24:27.549Z] ----------------------------------------------------------------------
+[debug] [2024-03-14T06:33:07.264Z] ----------------------------------------------------------------------
+[debug] [2024-03-14T06:33:07.268Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-03-14T06:33:07.268Z] CLI Version:   13.4.0
+[debug] [2024-03-14T06:33:07.269Z] Platform:      win32
+[debug] [2024-03-14T06:33:07.269Z] Node Version:  v21.6.2
+[debug] [2024-03-14T06:33:07.269Z] Time:          Thu Mar 14 2024 10:03:07 GMT+0330 (Iran Standard Time)
+[debug] [2024-03-14T06:33:07.269Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-03-01T14:24:27.554Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:24:27.721Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:24:27.721Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  D:\Tarashti\real-chat-app\tarashti-jewelry
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[debug] [2024-03-01T14:24:27.900Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-03-14T06:33:07.274Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-03-14T06:33:07.402Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-14T06:33:07.402Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
+[debug] [2024-03-14T06:33:07.402Z] [iam] checking project tarashtijewelry for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-14T06:33:07.403Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions [none]
+[debug] [2024-03-14T06:33:07.404Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions x-goog-quota-user=projects/tarashtijewelry
+[debug] [2024-03-14T06:33:07.404Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-14T06:33:07.600Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
 [warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2024-03-01T14:24:27.901Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2024-03-01T14:25:15.539Z] Using project from CLI flag: tarashtijewelry
-[debug] [2024-03-01T14:25:15.542Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:25:16.401Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 403
-[debug] [2024-03-01T14:25:16.401Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/tarashtijewelry</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2024-03-01T14:25:16.402Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[debug] [2024-03-01T14:25:16.959Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-    at RetryOperation._fn (C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:264:39)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-[error] 
-[error] Error: Failed to get Firebase project tarashtijewelry. Please make sure the project exists and your account has permission to access it.
-[debug] [2024-03-01T14:28:56.403Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:28:56.406Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2024-03-01T14:28:56.407Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:28:56.407Z] Platform:      win32
-[debug] [2024-03-01T14:28:56.407Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:28:56.408Z] Time:          Fri Mar 01 2024 17:58:56 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:28:56.408Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2024-03-01T14:28:56.412Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:28:56.553Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:28:56.554Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  D:\Tarashti\real-chat-app\tarashti-jewelry
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2024-03-01T14:29:05.168Z] Using project from CLI flag: tarashtijewelry
-[debug] [2024-03-01T14:29:05.170Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:29:06.470Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 200
-[debug] [2024-03-01T14:29:06.470Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry {"projectId":"tarashtijewelry","projectNumber":"637459857982","displayName":"TarashtiJewelry","name":"projects/tarashtijewelry","resources":{"hostingSite":"tarashtijewelry"},"state":"ACTIVE","etag":"1_e650428d-7deb-4542-a598-3079092f56c7"}
-[info] i  Using project tarashtijewelry (TarashtiJewelry) 
-[info] 
-=== Hosting Setup
-[debug] [2024-03-01T14:29:06.497Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:29:06.959Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 200
-[debug] [2024-03-01T14:29:06.960Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry {"projectId":"tarashtijewelry","projectNumber":"637459857982","displayName":"TarashtiJewelry","name":"projects/tarashtijewelry","resources":{"hostingSite":"tarashtijewelry"},"state":"ACTIVE","etag":"1_e650428d-7deb-4542-a598-3079092f56c7"}
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[info] +  Wrote ./build/404.html 
-[debug] [2024-03-01T14:29:29.369Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
-[debug] [2024-03-01T14:29:29.951Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
-[debug] [2024-03-01T14:29:29.951Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.1","browserURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.memory.js"}}
-[info] i  Skipping write of ./build/index.html 
-[info] 
-[info] i  Writing configuration info to firebase.json... 
-[info] i  Writing project information to .firebaserc... 
-[info] 
-[info] +  Firebase initialization complete! 
-[debug] [2024-03-01T14:29:45.386Z] Error: Timed out.
-    at Timeout._onTimeout (C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
-    at listOnTimeout (node:internal/timers:573:17)
-    at process.processTimers (node:internal/timers:514:7)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2024-03-01T14:29:53.310Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:29:53.313Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2024-03-01T14:29:53.314Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:29:53.314Z] Platform:      win32
-[debug] [2024-03-01T14:29:53.314Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:29:53.314Z] Time:          Fri Mar 01 2024 17:59:53 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:29:53.315Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2024-03-01T14:29:53.319Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:29:53.445Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:29:53.446Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  D:\Tarashti\real-chat-app\tarashti-jewelry
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2024-03-01T14:30:03.442Z] Using project from CLI flag: tarashtijewelry
-[debug] [2024-03-01T14:30:03.443Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:30:05.167Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 200
-[debug] [2024-03-01T14:30:05.168Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry {"projectId":"tarashtijewelry","projectNumber":"637459857982","displayName":"TarashtiJewelry","name":"projects/tarashtijewelry","resources":{"hostingSite":"tarashtijewelry"},"state":"ACTIVE","etag":"1_e650428d-7deb-4542-a598-3079092f56c7"}
-[info] i  Using project tarashtijewelry (TarashtiJewelry) 
-[info] 
-=== Hosting Setup
-[debug] [2024-03-01T14:30:05.183Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:30:05.556Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 200
-[debug] [2024-03-01T14:30:05.557Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry {"projectId":"tarashtijewelry","projectNumber":"637459857982","displayName":"TarashtiJewelry","name":"projects/tarashtijewelry","resources":{"hostingSite":"tarashtijewelry"},"state":"ACTIVE","etag":"1_e650428d-7deb-4542-a598-3079092f56c7"}
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[info] i  Skipping write of ./build/404.html 
-[debug] [2024-03-01T14:30:11.880Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
-[debug] [2024-03-01T14:30:12.324Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
-[debug] [2024-03-01T14:30:12.325Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.1","browserURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.memory.js"}}
-[info] i  Skipping write of ./build/index.html 
-[info] 
-[info] i  Writing configuration info to firebase.json... 
-[info] i  Writing project information to .firebaserc... 
-[info] 
-[info] +  Firebase initialization complete! 
-[debug] [2024-03-01T14:30:21.861Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: read ECONNRESET
-[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2024-03-01T14:30:21.863Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2024-03-01T14:30:24.142Z] Error: Timed out.
-    at Timeout._onTimeout (C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
-    at listOnTimeout (node:internal/timers:573:17)
-    at process.processTimers (node:internal/timers:514:7)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2024-03-01T14:30:36.514Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:30:36.518Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2024-03-01T14:30:36.518Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:30:36.519Z] Platform:      win32
-[debug] [2024-03-01T14:30:36.519Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:30:36.519Z] Time:          Fri Mar 01 2024 18:00:36 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:30:36.519Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2024-03-01T14:30:36.524Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:30:36.675Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:30:36.675Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[debug] [2024-03-01T14:30:36.675Z] [iam] checking project tarashtijewelry for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-03-01T14:30:36.676Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions [none]
-[debug] [2024-03-01T14:30:36.676Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions x-goog-quota-user=projects/tarashtijewelry
-[debug] [2024-03-01T14:30:36.677Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-03-01T14:30:38.883Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions 200
-[debug] [2024-03-01T14:30:38.884Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-03-01T14:30:38.885Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:30:39.615Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 200
-[debug] [2024-03-01T14:30:39.616Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry {"projectId":"tarashtijewelry","projectNumber":"637459857982","displayName":"TarashtiJewelry","name":"projects/tarashtijewelry","resources":{"hostingSite":"tarashtijewelry"},"state":"ACTIVE","etag":"1_e650428d-7deb-4542-a598-3079092f56c7"}
-[info] 
-[info] === Deploying to 'tarashtijewelry'...
-[info] 
-[info] i  deploying hosting 
-[debug] [2024-03-01T14:30:39.627Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions [none]
-[debug] [2024-03-01T14:30:39.627Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2024-03-01T14:30:41.242Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions 200
-[debug] [2024-03-01T14:30:41.242Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions {"name":"projects/637459857982/sites/tarashtijewelry/versions/a5aa2f296dacac3f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2024-03-01T14:30:57.751Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: connect ETIMEDOUT 50.7.85.221:443
-[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2024-03-01T14:30:57.754Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2024-03-01T14:33:54.862Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:33:54.866Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2024-03-01T14:33:54.866Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:33:54.867Z] Platform:      win32
-[debug] [2024-03-01T14:33:54.867Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:33:54.867Z] Time:          Fri Mar 01 2024 18:03:54 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:33:54.867Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2024-03-01T14:33:54.871Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:33:55.020Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:33:55.021Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  D:\Tarashti\real-chat-app\tarashti-jewelry
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[debug] [2024-03-01T14:34:05.491Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:34:05.495Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2024-03-01T14:34:05.495Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:34:05.495Z] Platform:      win32
-[debug] [2024-03-01T14:34:05.495Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:34:05.496Z] Time:          Fri Mar 01 2024 18:04:05 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:34:05.496Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2024-03-01T14:34:05.500Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:34:05.651Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:34:05.651Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[debug] [2024-03-01T14:34:05.652Z] [iam] checking project tarashtijewelry for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-03-01T14:34:05.653Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions [none]
-[debug] [2024-03-01T14:34:05.653Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions x-goog-quota-user=projects/tarashtijewelry
-[debug] [2024-03-01T14:34:05.653Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-03-01T14:34:06.374Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions 200
-[debug] [2024-03-01T14:34:06.375Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-03-01T14:34:06.376Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:34:07.180Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 200
-[debug] [2024-03-01T14:34:07.180Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry {"projectId":"tarashtijewelry","projectNumber":"637459857982","displayName":"TarashtiJewelry","name":"projects/tarashtijewelry","resources":{"hostingSite":"tarashtijewelry"},"state":"ACTIVE","etag":"1_e650428d-7deb-4542-a598-3079092f56c7"}
-[info] 
-[info] === Deploying to 'tarashtijewelry'...
-[info] 
-[info] i  deploying hosting 
-[debug] [2024-03-01T14:34:07.209Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions [none]
-[debug] [2024-03-01T14:34:07.210Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2024-03-01T14:34:09.318Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions 200
-[debug] [2024-03-01T14:34:09.319Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tarashtijewelry/versions {"name":"projects/637459857982/sites/tarashtijewelry/versions/d9eab9914e6b3fae","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2024-03-01T14:35:10.002Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:35:10.006Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2024-03-01T14:35:10.006Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:35:10.007Z] Platform:      win32
-[debug] [2024-03-01T14:35:10.007Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:35:10.007Z] Time:          Fri Mar 01 2024 18:05:10 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:35:10.007Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2024-03-01T14:35:10.012Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:35:10.149Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:35:10.149Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[debug] [2024-03-01T14:35:10.149Z] [iam] checking project tarashtijewelry for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-03-01T14:35:10.151Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions [none]
-[debug] [2024-03-01T14:35:10.151Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions x-goog-quota-user=projects/tarashtijewelry
-[debug] [2024-03-01T14:35:10.151Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-03-01T14:35:10.335Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
-[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2024-03-01T14:35:10.337Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2024-03-01T14:35:10.817Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions 403
-[debug] [2024-03-01T14:35:10.818Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/tarashtijewelry:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2024-03-01T14:35:10.818Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[debug] [2024-03-01T14:35:10.820Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:35:11.450Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 403
-[debug] [2024-03-01T14:35:11.451Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/tarashtijewelry</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2024-03-01T14:35:11.451Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2024-03-14T06:33:07.601Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-03-14T06:33:08.193Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions 403
+[debug] [2024-03-14T06:33:08.193Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/tarashtijewelry:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2024-03-14T06:33:08.194Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2024-03-14T06:33:08.196Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
+[debug] [2024-03-14T06:33:08.998Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 403
+[debug] [2024-03-14T06:33:08.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/tarashtijewelry</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2024-03-14T06:33:08.999Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
 [error] 
 [error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
-[debug] [2024-03-01T14:35:19.769Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:35:19.773Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2024-03-01T14:35:19.774Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:35:19.774Z] Platform:      win32
-[debug] [2024-03-01T14:35:19.774Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:35:19.775Z] Time:          Fri Mar 01 2024 18:05:19 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:35:19.775Z] ----------------------------------------------------------------------
+[debug] [2024-03-14T06:43:37.691Z] ----------------------------------------------------------------------
+[debug] [2024-03-14T06:43:37.694Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-03-14T06:43:37.694Z] CLI Version:   13.5.0
+[debug] [2024-03-14T06:43:37.694Z] Platform:      win32
+[debug] [2024-03-14T06:43:37.695Z] Node Version:  v18.12.0
+[debug] [2024-03-14T06:43:37.696Z] Time:          Thu Mar 14 2024 10:13:37 GMT+0330 (Iran Standard Time)
+[debug] [2024-03-14T06:43:37.696Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-03-01T14:35:19.779Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:35:19.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:35:19.923Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[debug] [2024-03-01T14:35:19.923Z] [iam] checking project tarashtijewelry for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-03-01T14:35:19.924Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions [none]
-[debug] [2024-03-01T14:35:19.925Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions x-goog-quota-user=projects/tarashtijewelry
-[debug] [2024-03-01T14:35:19.925Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-03-01T14:35:20.091Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-03-14T06:43:37.702Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-03-14T06:43:37.845Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-14T06:43:37.846Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
+[debug] [2024-03-14T06:43:37.846Z] [iam] checking project tarashtijewelry for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-14T06:43:37.847Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions [none]
+[debug] [2024-03-14T06:43:37.847Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions x-goog-quota-user=projects/tarashtijewelry
+[debug] [2024-03-14T06:43:37.847Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-14T06:43:37.992Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
 [warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2024-03-01T14:35:20.095Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2024-03-01T14:35:20.418Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions 403
-[debug] [2024-03-01T14:35:20.419Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/tarashtijewelry:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2024-03-01T14:35:20.420Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[debug] [2024-03-01T14:35:20.424Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
-[debug] [2024-03-01T14:35:21.039Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 403
-[debug] [2024-03-01T14:35:21.039Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/tarashtijewelry</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2024-03-01T14:35:21.039Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2024-03-14T06:43:37.994Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-03-14T06:43:38.594Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions 403
+[debug] [2024-03-14T06:43:38.595Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/tarashtijewelry:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2024-03-14T06:43:38.595Z] [iam] error while checking permissions, command may fail: FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
+[debug] [2024-03-14T06:43:38.596Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry [none]
+[debug] [2024-03-14T06:43:39.225Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry 403
+[debug] [2024-03-14T06:43:39.225Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tarashtijewelry "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/tarashtijewelry</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2024-03-14T06:43:39.226Z] Unable to parse JSON: SyntaxError: Unexpected token < in JSON at position 0
 [error] 
 [error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
-[debug] [2024-03-01T14:39:09.146Z] ----------------------------------------------------------------------
-[debug] [2024-03-01T14:39:09.151Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hplp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2024-03-01T14:39:09.152Z] CLI Version:   13.4.0
-[debug] [2024-03-01T14:39:09.152Z] Platform:      win32
-[debug] [2024-03-01T14:39:09.152Z] Node Version:  v21.6.2
-[debug] [2024-03-01T14:39:09.153Z] Time:          Fri Mar 01 2024 18:09:09 GMT+0330 (Iran Standard Time)
-[debug] [2024-03-01T14:39:09.153Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2024-03-01T14:39:09.159Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-03-01T14:39:09.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-03-01T14:39:09.350Z] > authorizing via signed-in user (omidrazzaghi2000@gmail.com)
-[debug] [2024-03-01T14:39:09.350Z] [iam] checking project tarashtijewelry for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-03-01T14:39:09.352Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions [none]
-[debug] [2024-03-01T14:39:09.352Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions x-goog-quota-user=projects/tarashtijewelry
-[debug] [2024-03-01T14:39:09.352Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tarashtijewelry:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-03-01T14:39:10.128Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2024-03-01T14:39:10.129Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
