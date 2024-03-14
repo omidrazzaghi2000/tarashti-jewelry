@@ -7,14 +7,11 @@ import Parse from 'parse/dist/parse.min.js';
 import { toast } from 'react-toastify';
 
 
-/** Initializing the SDK. **/
-Parse.initialize('HOMspH4VDRuAN3wyyxcyNISZzfSGkrM194UAdbEB','HVh21Q8XALwj9MstDAMUWlNFHs9M4EZrJd1NPOwd');
-Parse.serverURL = 'https://parseapi.back4app.com/';
+
 
 export async function saveNewOrder(user,item,itemNumber,isBuy) {
     
-    alert("omid")
-    
+
     console.log(user)
 
 
@@ -43,6 +40,7 @@ export async function saveNewOrder(user,item,itemNumber,isBuy) {
         //Save the Object
         let result = await newOrder.save()
         alert('New object created with objectId: ' + result.id);
+        window.location.reload()
     }catch(error){
         alert('Failed to create new object, with error code: ' + error.message);
     }
