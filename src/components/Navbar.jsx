@@ -17,7 +17,7 @@ function Navbar() {
 
     const { user, logout } = UserAuth()
     const navigate = useNavigate()
-
+    console.log("NAVBAR",user)
     const handleSignOut = async () => {
         try {
             await logout()
@@ -37,7 +37,7 @@ function Navbar() {
                 <Switcher />
             </div>
             <div className='md:block hidden'>
-                {!isEmpty(user) && user?.get('username') ? (
+                {user !== undefined && !isEmpty(user) && user?.get('username') ? (
                     <div className='flex'>
                         <Link to="/account">
                             <CgProfile className='mr-4 mt-1 cursor-pointer' size={26} />

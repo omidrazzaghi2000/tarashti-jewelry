@@ -5,7 +5,8 @@ import {
     signInWithEmailAndPassword, 
     signOut, 
     onAuthStateChanged } from "firebase/auth";
-import { doc, setDoc } from "firebase/firestore"
+import { doc, setDoc } from "firebase/firestore";
+import Parse from 'parse/dist/parse.min.js';
 
 const UserContext = createContext()
 
@@ -15,28 +16,28 @@ export const AuthContextProvider = ({ children }) => {
 
     const signUp = (user) => {
         setUser(user)
-        // createUserWithEmailAndPassword(auth, email, password)
-        // return setDoc(doc(db, "user", email), {
-        //     favorites: [],
-        // })
     }
     const signIn = (user) => {
         setUser(user)
-        // return signInWithEmailAndPassword(auth, email, password)
     }
 
-    const logout = () => {
+    const logout = async () => {
+
+        await Parse.User.logOut()
+
         setUser(null)
-        // return signOut(auth)
+
+
     }
 
     useEffect(()=>{
-        // const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-        //     setUser(currentUser)
-        // })
-        // return () => {
-        //     unsubscribe()
-        // }
+        async function getUser(){
+                let user = await Parse.User.current()
+                setUser(user)
+
+            
+        }
+        getUser()
     },[])
 
     return (

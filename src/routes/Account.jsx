@@ -13,7 +13,7 @@ const navigate = useNavigate()
 const handleSignOut = async () => {
   try {
     await logout()
-    navigate("/")
+    navigate("/tarashti-jewelry")
   } catch (error) {
     console.log(error.message);
   }

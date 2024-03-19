@@ -51,7 +51,7 @@ function SignIn() {
             // Update state variable holding current user
             //AuthContext
             await signIn(currentUser);
-            navigate('/')
+            navigate('/tarashti-jewelry')
             return true;
         } catch (error) {
             // Error can be caused by wrong parameters or lack of Internet connection

@@ -17,7 +17,7 @@ function PricesItem({ item }) {
     }
 
     function sendBuyOrder(item) {
-        if(user){
+        if(user!==undefined){
             let msg = "آیا مطمئن هستید که می خواهید"
             msg += ` ${buyNumber} `;
             msg += `تعداد از `;
@@ -36,7 +36,7 @@ function PricesItem({ item }) {
     }
 
     function sendSellOrder(item) {
-        if(user){
+        if(user!==undefined){
             let msg = "آیا مطمئن هستید که می خواهید"
             msg += ` ${sellNumber} `;
             msg += `تعداد از `;

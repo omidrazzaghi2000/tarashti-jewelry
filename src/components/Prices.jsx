@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import axios from "axios"
 import PricesItem from './PricesItem'
 // for back4app
 import Parse from 'parse/dist/parse.min.js';
-
-import { toast } from 'react-toastify';
 
 
 

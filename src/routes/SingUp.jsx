@@ -52,7 +52,7 @@ function SignUp() {
         //     console.log(e.message)
         // }
         if(doUserRegistration()){
-            navigate("/")
+            navigate("/tarashti-jewelry")
         }
     }
 

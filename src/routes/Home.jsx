@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import Coins from '../components/Coins'
+import Orders from '../components/Orders'
 import Prices from '../components/Prices'
 
 // for back4app
@@ -10,23 +10,10 @@ Parse.serverURL = 'https://parseapi.back4app.com/';
 
 function Home(props) {
 
-  const [orders,setOrders] = useState()
-
-  useEffect(()=>{
-    async function getOrders(){
-      //create your Parse Query using the Person Class you've created
-      let query = new Parse.Query('orders');
-      //run the query to retrieve all objects on Person class, optionally you can add your filters
-      let queryResult = await query.find();
-
-      setOrders(queryResult)
-    }
-    getOrders()
-  },[])
   return (
     <div>
         <Prices/>
-        <Coins orders={orders}/>
+        <Orders/>
     </div>
   )
 }
